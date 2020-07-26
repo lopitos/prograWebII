@@ -1,0 +1,23 @@
+.normal {
+    color: black;
+    font-size: 2em;
+}
+
+.negrita {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.azul {
+    color: blue;
+}
+
+.verde {
+    color: green;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.rojo {
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

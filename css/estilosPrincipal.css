@@ -1,0 +1,155 @@
+:root {
+    --color-bg-fondo: #b0b0b0;
+    --color-bg-titulo: #190b30;
+    --color-bg-fondoArticulo: #ffffff;
+    --color-bg-fondoAside: #ab7777;
+    --color-bg-fondoMenu: #ff0000;
+}
+
+* {
+    padding: 5px 5px 5px 5px;
+}
+
+body {
+    background: var(--color-bg-fondo);
+}
+
+body nav h2 div span {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--color-bg-titulo);
+}
+
+body nav ul {
+    flex: auto;
+    justify-content: flex-end;
+}
+
+body nav ul li {
+    padding: 5px 5px 5px 5px;
+    /*background: blue;*/
+}
+
+body nav div ul li a {
+    border-radius: 10px;
+    color: rgb(255, 0, 0) limportant;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0.5em 1.5em;
+    background: var(--color-bg-fondoArticulo);
+    border: 2px solid;
+    border-color: #51585a;
+}
+
+body nav ul li a::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 100px;
+    /*background: rgb(255, 0, 0);*/
+}
+
+body nav ul li a:hover:before {
+    width: 100%;
+}
+
+@media (min-width: 375px) {
+    body nav div {
+        display: flex;
+        height: 100%;
+    }
+    body nav h2 {
+        align-items: center;
+    }
+    body nav div ul {
+        text-align: center;
+    }
+}
+
+body #imagen {
+    width: 100%;
+}
+
+body div img {
+    width: 100%;
+}
+
+body header menu ul {
+    list-style: none;
+}
+
+body header menu ul li {
+    float: left;
+}
+
+body header menu ul li a {
+    border-bottom: solid var(--color-bg-fondo);
+    color: var(--color-bg-fondoArticulo);
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+}
+
+body header menu ul li a:hover {
+    text-decoration: none;
+    background: #cccccc;
+    border-radius: 10px;
+}
+
+body main {
+    clear: both;
+}
+
+body main section {
+    width: 67.5%;
+    margin-right: 1.5%;
+    float: left;
+}
+
+body main section article {
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    background: var(--color-bg-fondoArticulo);
+    float: left;
+}
+
+body main aside {
+    width: 30%;
+    background: var(--color-bg-fondoAside);
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 992px) {
+    body nav div ul {
+        text-align: center;
+        background: #000000;
+    }
+    body #imagen {
+        width: 100%;
+    }
+    body main section article {
+        width: 100%;
+    }
+    body main aside {
+        width: 100%;
+    }
+}
+
+body footer {
+    width: 100%;
+    clear: both;
+    text-align: center;
+    padding: 10px 0px;
+    background: #ffffff;
+}
+
+body footer div p {
+    margin-top: 10px;
+    background: #000000;
+    color: var(--color-bg-fondoArticulo);
+}
